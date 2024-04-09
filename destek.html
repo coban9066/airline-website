@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek </title>
+    <link rel="stylesheet" href="css/destek.css">
+   
+</head>
+<body>
+    
+    <form action="destek.php" method="post">
+        <label for="ad">Adınız:</label><br>
+        <input type="text" id="ad" name="ad" required><br><br>
+        
+        <label for="email">E-posta Adresiniz:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="konu">Destek Konusu:</label><br>
+        <select id="konu" name="konu" required>
+            <option value="">Konu Seçin</option>
+            <option value="rezervasyon">Rezervasyon</option>
+            <option value="bagaj">Bagaj</option>
+            <option value="uçuş iptali">Uçuş İptali</option>
+            <option value="diğer">Diğer</option>
+        </select><br><br>
+        
+        <label for="mesaj">Mesajınız:</label><br>
+        <textarea id="mesaj" name="mesaj" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Gönder">
+    </form>
+
+    <a href="index.html"><img src="../image/1.png" alt="Resim" width="300" ></a>
+</body>
+</html>

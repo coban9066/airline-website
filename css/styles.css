@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.background {
+    background-image: url('../image/2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    filter: blur(5px); 
+}
+.logo img:hover{
+    transform: scale(1.3) rotate(360deg);
+}
+.logo img {
+    width: 300px;
+    position: fixed;
+    display: inline;
+    left: 800px;
+    padding: 0;
+    top: -50px;
+    transition: 5s all ease;
+    z-index: 900;
+    
+
+    
+   
+}
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.bar {
+    background-color: aqua;
+    display: inline;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 70%;
+    transition: 2s all;
+}
+.bar:hover{
+    opacity: 100%;
+}
+
+.bar a {
+    text-decoration: none;
+}
+
+#sağ , #sol {
+    color: white;
+    top: 10px;
+    position: relative ;
+    font-size: 30px;
+    
+}
+
+#sol {
+    display: inline;
+    left: 500px;
+    margin: 30px;
+}
+
+#sağ {
+    display: inline;
+    left: 750px;
+    margin: 30px;
+}
+
+#sağ:hover ,#sol:hover {
+    color: rgb(14, 95, 172);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
